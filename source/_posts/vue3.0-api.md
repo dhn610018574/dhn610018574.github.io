@@ -3,6 +3,10 @@ title: Vue Function-based API RFC
 ---
 ### 基本例子
 ```
+<!-- 此处指已发布3.0版本的写法 如果还没有升级为vue3.0 那么应该这样引入 -->
+<!-- 安装 npm install @vue/composition-api --save -->
+<!-- import { value, computed, watch, onMounted } from '@vue/composition-api' -->
+
 import { value, computed, watch, onMounted } from 'vue'
 
 const App = {
