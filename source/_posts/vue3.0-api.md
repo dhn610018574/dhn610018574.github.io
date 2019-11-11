@@ -42,3 +42,22 @@ const App = {
 }
 
 ```
+### 1、setup 
+setup() 函数是vue3中专门为组件提供的新属性，它为我们的使用vue3的 Composition API 新特性提供了统一的入口。
+
+## 1.1执行时机
+setup 函数会在beforeCreate之后、created之前执行。
+
+## 1.2接收props数据
+    1、在props中定义当前组件允许外界传递过来的参数名称：
+    ```
+    props: {
+      p1: String
+    }
+    ```
+    2、通过setup 函数的第一个形参，接收props数据
+    ```
+    setup(props){
+      console.log(props.p1)
+    }
+    ```
